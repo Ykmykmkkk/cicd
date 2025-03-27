@@ -14,4 +14,9 @@ public class MainController {
         String username = "안녕";
         return username;
     }
+    @GetMapping("/hello")
+    public String getUsernsame(){
+        String username = "안녕";
+        return username;
+    }
 }
