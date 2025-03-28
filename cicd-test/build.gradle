@@ -24,7 +24,9 @@ bootJar.enabled = false // JAR 비활성화
 bootWar.enabled = true  // WAR 활성화
 war.enabled = false
 bootWar{
+	archiveBaseName("myapp")
 	archiveFileName("myapp.war")
+	archiveVersion("0.0.0")
 }
 repositories {
 	mavenCentral()
