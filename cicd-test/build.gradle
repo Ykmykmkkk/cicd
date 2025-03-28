@@ -22,7 +22,10 @@ configurations {
 
 bootJar.enabled = false // JAR 비활성화
 bootWar.enabled = true  // WAR 활성화
-
+war.enabled = true
+bootWar{
+	archiveFileName("myapp.war")
+}
 repositories {
 	mavenCentral()
 }
