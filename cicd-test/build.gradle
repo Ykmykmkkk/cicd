@@ -22,9 +22,6 @@ configurations {
 
 bootJar.enabled = false // JAR 비활성화
 bootWar.enabled = true  // WAR 활성화
-bootWar {
-	archiveFileName = 'ROOT.war' // 루트 경로로 배포하기 위해 설정
-}
 
 repositories {
 	mavenCentral()
