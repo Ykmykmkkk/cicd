@@ -23,9 +23,12 @@ configurations {
 bootJar.enabled = false // JAR 비활성화
 bootWar.enabled = true  // WAR 활성화
 tasks.named('bootWar') {
-	archiveBaseName.set("root")
-	archiveFileName.set("root.war")
+	archiveBaseName.set("myapp")
+	archiveFileName.set("myapp.war")
 	archiveVersion.set("0.0.0")
+}
+tasks.named('war') {
+	enabled = false
 }
 repositories {
 	mavenCentral()
