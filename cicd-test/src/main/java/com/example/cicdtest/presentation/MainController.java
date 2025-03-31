@@ -11,12 +11,12 @@ import java.util.UUID;
 public class MainController {
     @GetMapping("/")
     public String getUsername(){
-        String username = "안녕";
+        String username = "안녕2";
         return username;
     }
     @GetMapping("/hello")
     public String getUsernsame(){
-        String username = "안녕";
+        String username = "안녕2";
         return username;
     }
 }
